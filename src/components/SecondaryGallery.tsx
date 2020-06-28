@@ -3,7 +3,7 @@ import * as React from "react";
 import { jsx } from "theme-ui";
 import Img from "gatsby-image";
 import { Lightbox } from "react-modal-image";
-import useGallery from "../hooks/useGallery";
+import useGallery from "../hooks/useSecondaryGallery";
 import Grid from "./Grid";
 import Tile from "./Tile";
 
