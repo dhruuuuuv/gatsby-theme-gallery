@@ -1,1 +1,2 @@
-export { default as Gallery } from "./src/components/Gallery";
+export { default as PrimaryGallery } from "./src/components/PrimaryGallery";
+export { default as SecondaryGallery } from "./src/components/SecondaryGallery";
