@@ -1,5 +1,8 @@
-module.exports = options => {
-  const { galleryPath = "content/gallery" } = options;
+module.exports = (options) => {
+  const {
+    primaryGalleryPath = "content/primaryGallery",
+    secondaryGalleryPath = "content/secondaryGallery",
+  } = options;
 
   return {
     siteMetadata: {
@@ -17,8 +20,15 @@ module.exports = options => {
       {
         resolve: "gatsby-source-filesystem",
         options: {
-          name: galleryPath,
-          path: galleryPath,
+          name: primaryGalleryPath,
+          path: primaryGalleryPath,
+        },
+      },
+      {
+        resolve: "gatsby-source-filesystem",
+        options: {
+          name: secondaryGalleryPath,
+          path: secondaryGalleryPath,
         },
       },
       "gatsby-plugin-sharp",

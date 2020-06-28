@@ -15,7 +15,6 @@ interface Query {
 }
 
 const useGallery = () => {
-  // TODO: Make "content/gallery" dynamic somehow..
   const data = useStaticQuery<Query>(graphql`
     query {
       allFile(
