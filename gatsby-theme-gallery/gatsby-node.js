@@ -13,12 +13,12 @@ exports.onPreBootstrap = ({ reporter, store }, themeOptions) => {
   }
 };
 
-exports.createPages = ({ actions }, themeOptions) => {
-  const { createPage } = actions;
-  const { basePath } = themeOptions;
+// exports.createPages = ({ actions }, themeOptions) => {
+//   const { createPage } = actions;
+//   const { basePath } = themeOptions;
 
-  createPage({
-    path: basePath || "/",
-    component: path.resolve(`${__dirname}/src/pages/index.tsx`),
-  });
-};
+//   createPage({
+//     path: basePath || "/",
+//     component: path.resolve(`${__dirname}/src/pages/index.tsx`),
+//   });
+// };
