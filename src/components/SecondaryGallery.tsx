@@ -16,8 +16,8 @@ const imgStyles: any = {
     height: "100%",
     transition: "transform 0.5s, filter 0.25s",
     "&:hover": {
-      transform: "scale(1.1)",
-      filter: "saturate(1.3)",
+      transform: "scale(1.05)",
+      // filter: "saturate(1.3)",
     },
   },
 };
