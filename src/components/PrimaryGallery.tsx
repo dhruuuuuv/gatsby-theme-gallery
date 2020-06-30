@@ -24,6 +24,8 @@ const imgStyles: any = {
 
 const Gallery = () => {
   const images = useGallery();
+  if (!images) return null;
+
   const [showImageIndex, setShowImageIndex] = React.useState<
     number | undefined
   >(undefined);
