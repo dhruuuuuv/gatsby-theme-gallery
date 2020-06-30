@@ -36,6 +36,8 @@ const useGallery = () => {
     }
   `);
 
+  if (!data || !data.allFile) return null;
+
   return data.allFile.nodes.map((node) => ({
     ...node.childImageSharp,
     id: node.id,
